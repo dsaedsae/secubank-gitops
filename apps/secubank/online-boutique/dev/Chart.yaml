@@ -1,0 +1,6 @@
+apiVersion: v2
+name: secubank-online-boutique
+description: SecuriBank Online Boutique baseline Helm chart
+type: application
+version: 0.1.0
+appVersion: "dev"

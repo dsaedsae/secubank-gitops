@@ -1,0 +1,24 @@
+images:
+  registry: harbor.local
+  project: secubank
+  tagStrategy: git-short-sha
+
+  frontend:
+    repository: harbor.local/secubank/frontend
+    tag: local-dev
+
+  cartservice:
+    repository: harbor.local/secubank/cartservice
+    tag: local-dev
+
+  checkoutservice:
+    repository: harbor.local/secubank/checkoutservice
+    tag: local-dev
+
+  paymentservice:
+    repository: harbor.local/secubank/paymentservice
+    tag: local-dev
+
+  productcatalogservice:
+    repository: harbor.local/secubank/productcatalogservice
+    tag: local-dev

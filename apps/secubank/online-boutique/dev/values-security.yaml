@@ -1,0 +1,9 @@
+security:
+  runAsNonRoot: true
+  allowPrivilegeEscalation: false
+  privileged: false
+  readOnlyRootFilesystem: true
+
+policy:
+  networkPolicyEnabled: false
+  podSecurityBaseline: restricted-later
