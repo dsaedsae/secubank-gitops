@@ -3,4 +3,4 @@ workload:
   namespace: security-lab
 image:
   repository: localhost:8082/secubank/vulnbank
-  tag: build-6
+  tag: build-9
