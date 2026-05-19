@@ -1,0 +1,6 @@
+apiVersion: v2
+name: vulnbank
+description: VulnBank security validation workload for secubank DevSecOps local PoC
+type: application
+version: 0.1.0
+appVersion: "dev"

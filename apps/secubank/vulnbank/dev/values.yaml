@@ -1,0 +1,7 @@
+workload:
+  name: vulnbank
+  namespace: security-lab
+
+image:
+  repository: localhost:8082/secubank/vulnbank
+  tag: dev

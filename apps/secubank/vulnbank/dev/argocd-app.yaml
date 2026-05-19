@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: secubank-vulnbank-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/dsaedsae/secubank-gitops.git
+    targetRevision: main
+    path: apps/secubank/vulnbank/dev
+    helm:
+      releaseName: vulnbank
+      valueFiles:
+        - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: security-lab
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
