@@ -195,7 +195,7 @@ spec:
               key: DEEPSEEK_API_KEY
               name: vulnbank-secret
               optional: true
-        image: localhost:8082/secubank/vulnbank:dev
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 6
